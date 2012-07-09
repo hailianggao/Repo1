@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8464985C-B3F2-484C-8CB8-4B01E21ACFDD}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaoMeetting</RootNamespace>
+    <AssemblyName>TaoMeetting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>D:\TaoMeetting\TaoMeetting\bin\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcContrib">
+      <HintPath>D:\TaoMeetting\TaoMeetting\bin\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>D:\TaoMeetting\TaoMeetting\bin\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache, Version=2.0.0.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.3.0.20214, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.0.20214, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.3.0.20214, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate21">
+      <HintPath>..\..\luntan360\WebSite\bin\Spring.Data.NHibernate21.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web, Version=1.3.0.20214, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\luntan360\WebSite\bin\Spring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.Helpers" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BrandInfoController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BuyTypeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FunctionTypeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PriceRangeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\UploadFile.ashx.cs">
+      <DependentUpon>UploadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Account\LogOn.aspx" />
+    <Content Include="Areas\Admin\Views\BrandInfo\CreateBrand.aspx" />
+    <Content Include="Areas\Admin\Views\BrandInfo\DeleteBrand.aspx" />
+    <Content Include="Areas\Admin\Views\BrandInfo\EditBrand.aspx" />
+    <Content Include="Areas\Admin\Views\BrandInfo\Index.aspx" />
+    <Content Include="Areas\Admin\Views\BuyType\CreateBuytype.aspx" />
+    <Content Include="Areas\Admin\Views\BuyType\EditBuytype.aspx" />
+    <Content Include="Areas\Admin\Views\BuyType\Index.aspx" />
+    <Content Include="Areas\Admin\Views\FunctionType\CreateFun.aspx" />
+    <Content Include="Areas\Admin\Views\FunctionType\EditFun.aspx" />
+    <Content Include="Areas\Admin\Views\FunctionType\Index.aspx" />
+    <Content Include="Areas\Admin\Views\PriceRange\CreatePriceRange.aspx" />
+    <Content Include="Areas\Admin\Views\PriceRange\EditPriceRange.aspx" />
+    <Content Include="Areas\Admin\Views\PriceRange\Index.aspx" />
+    <Content Include="Areas\Admin\Views\ProductType\CreatePro.aspx" />
+    <Content Include="Areas\Admin\Views\ProductType\EditPro.aspx" />
+    <Content Include="Areas\Admin\Views\ProductType\Index.aspx" />
+    <Content Include="Config\Business.xml" />
+    <Content Include="Config\Dao.xml" />
+    <Content Include="Config\Spring.NHibernate.Database.xml" />
+    <Content Include="Config\Transcation.xml" />
+    <Content Include="css\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\01.jpg" />
+    <Content Include="images\02.jpg" />
+    <Content Include="images\03.jpg" />
+    <Content Include="images\04.jpg" />
+    <Content Include="images\05.jpg" />
+    <Content Include="images\06.jpg" />
+    <Content Include="images\07.jpg" />
+    <Content Include="images\08.jpg" />
+    <Content Include="images\09.jpg" />
+    <Content Include="images\10.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\13.jpg" />
+    <Content Include="images\14.jpg" />
+    <Content Include="images\15.jpg" />
+    <Content Include="images\16.jpg" />
+    <Content Include="images\17.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\fullstar.jpg" />
+    <Content Include="images\halfstar.jpg" />
+    <Content Include="images\l.jpg" />
+    <Content Include="images\nullstar.jpg" />
+    <Content Include="images\r.jpg" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\slider1_image_1.jpg" />
+    <Content Include="images\slider1_image_2.jpg" />
+    <Content Include="images\slider1_image_3.jpg" />
+    <Content Include="images\slider_arrows.png" />
+    <Content Include="jquery.uploadify-v2.1.0\cancel.png" />
+    <Content Include="jquery.uploadify-v2.1.0\check.php" />
+    <Content Include="jquery.uploadify-v2.1.0\example\cancel.png" />
+    <Content Include="jquery.uploadify-v2.1.0\example\css\default.css" />
+    <Content Include="jquery.uploadify-v2.1.0\example\css\uploadify.css" />
+    <Content Include="jquery.uploadify-v2.1.0\example\css\_notes\dwsync.xml" />
+    <Content Include="jquery.uploadify-v2.1.0\example\index.php" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\check.php" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\expressInstall.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\jquery-1.3.2.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\jquery.uploadify.v2.1.0.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\swfobject.js" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\uploadify.php" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\uploadify.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\_notes\dwsync.xml" />
+    <Content Include="jquery.uploadify-v2.1.0\example\_notes\dwsync.xml" />
+    <Content Include="jquery.uploadify-v2.1.0\expressInstall.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\jquery-1.3.2.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\jquery.uploadify.v2.1.0.js" />
+    <Content Include="jquery.uploadify-v2.1.0\jquery.uploadify.v2.1.0.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\swfobject.js" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.allglyphs.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.css" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.php" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.swf" />
+    <Content Include="Scripts\FilterClick.js" />
+    <Content Include="Scripts\home.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="style\default.css" />
+    <Content Include="style\home.css" />
+    <Content Include="style\style.css" />
+    <Content Include="style\styles_ie.css" />
+    <Content Include="Views\Home\AddressList.ascx" />
+    <Content Include="Views\Home\BaseFunList.ascx" />
+    <Content Include="Views\Home\BuyTypeList.ascx" />
+    <Content Include="Views\Home\MainPage.aspx" />
+    <Content Include="Views\Home\PriceRangeList.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="jquery.uploadify-v2.1.0\example\uploads\" />
+    <Folder Include="UpLoad\BrandPic\" />
+    <Folder Include="UpLoad\ProductPic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\UploadFile.ashx" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\air\logging\FileTarget.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\HMAC.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\MD5.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\MD5Stream.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\SHA1.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\SHA224.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\SHA256.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\WSSEUsernameToken.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\errors\IllegalStateError.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\Address.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\Email.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\Phone.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\VCard.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\VCardParser.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\images\BitString.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\images\JPGEncoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\images\PNGEncoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\DynamicURLLoader.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\IURIResolver.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\MimeTypeMap.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\proxies\RFC2817Socket.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\URI.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\URIEncodingBitmap.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Database.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Definition.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Dict.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\DictionaryServer.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\ConnectedEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DatabaseEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DefinitionEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DefinitionHeaderEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DictionaryServerEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DisconnectedEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\ErrorEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\MatchEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\MatchStrategiesEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\NoMatchEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\MatchStrategy.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Response.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\util\CompleteResponseEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\util\SocketHelper.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSON.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONDecoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONEncoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONParseError.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONToken.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONTokenizer.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONTokenType.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\ArrayUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\DateUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\DictionaryUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\IntUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\NumberFormatter.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\StringUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\XMLUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\webapis\events\ServiceEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\webapis\ServiceBase.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\webapis\URLLoaderBase.as" />
+    <None Include="jquery.uploadify-v2.1.0\Uploadify v2.1.0 Manual.pdf" />
+    <None Include="jquery.uploadify-v2.1.0\uploadify.fla" />
+    <None Include="style\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{F7A4F0C8-F83A-45D5-B0FF-6E5709B01A86}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{8E144726-D388-4A45-8CFA-21FBFE30CFB1}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistence\Persistence.csproj">
+      <Project>{E55224D7-0555-4903-8B2A-7DD45F87D654}</Project>
+      <Name>Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{517CE853-A673-4FA5-971C-CE2D413AC0A4}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>23605</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Domain" namespace="TaoMeetting.Domain">
+  <class name="BrandBuy" table="BrandBuy" lazy="true">
+    <id name="id" column="id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="float"  name="Price" column="Price" not-null="true"/>
+    <property type="int"  name="BbId" column="BbId" not-null="true"/>
+    <!--<property type="float"  name="BuyTypeId" column="BuyTypeId" not-null="true"/>-->
+    <many-to-one name="ButT" cascade="none"  column="BuyTypeId"  class="TaoMeetting.Domain.BuyType,TaoMeetting"></many-to-one>
+    </class>
+</hibernate-mapping>

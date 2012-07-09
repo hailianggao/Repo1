@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Domain" namespace="TaoMeetting.Domain">
+  <class name="Address" table="Address" lazy="true">
+    <id name="ZipCode" column="ZipCode" type="string">
+    </id>
+    <property type="string"  name="Name" column="Name" not-null="true"/>
+    <property type="string"  name="Province" column="Province" not-null="true"/>
+  </class>
+</hibernate-mapping>

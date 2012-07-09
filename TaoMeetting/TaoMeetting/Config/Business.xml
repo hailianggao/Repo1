@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+  <object id="functionTypeManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.FunctionTypeComponent,Business">
+        <property name="Dao" ref="functionTypeDao" />
+      </object>
+    </property>
+  </object>
+  <object id="productTypeManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.ProductTypeComponent,Business">
+        <property name="Dao" ref="productTypeDao" />
+      </object>
+    </property>
+  </object>
+  <object id="brandInfoManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.BrandInfoComponent,Business">
+        <property name="Dao" ref="brandInfoDao" />
+      </object>
+    </property>
+  </object>
+  <object id="addressManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.AddressComponent,Business">
+        <property name="Dao" ref="addressDao" />
+      </object>
+    </property>
+  </object>
+  <object id="buyTypeManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.BuyTypeComponent,Business">
+        <property name="Dao" ref="buyTypeDao" />
+      </object>
+    </property>
+  </object>
+ <object id="brandFunctionManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.BrandFunctionComponent,Business">
+        <property name="Dao" ref="brandFunctionDao" />
+      </object>
+    </property>
+  </object>
+  <object id="brandProductManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.BrandProductComponent,Business">
+        <property name="Dao" ref="brandProductDao" />
+      </object>
+    </property>
+  </object>
+  <object id="brandBuyManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.BrandBuyComponent,Business">
+        <property name="Dao" ref="brandBuyDao" />
+      </object>
+    </property>
+  </object>
+<object id="pricerangeManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="TaoMeetting.Business.PriceRangeComponent,Business">
+        <property name="Dao" ref="priceRangeDao" />
+      </object>
+    </property>
+  </object>
+</objects>

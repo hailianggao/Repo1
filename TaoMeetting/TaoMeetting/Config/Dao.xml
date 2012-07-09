@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+  <object id="functionTypeDao" type="TaoMeetting.Persistence.FunctionTypeDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="productTypeDao" type="TaoMeetting.Persistence.ProductTypeDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="brandInfoDao" type="TaoMeetting.Persistence.BrandInfoDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="addressDao" type="TaoMeetting.Persistence.AddressDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="buyTypeDao" type="TaoMeetting.Persistence.BuyTypeDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="brandFunctionDao" type="TaoMeetting.Persistence.BrandFunctionDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="brandProductDao" type="TaoMeetting.Persistence.BrandProductDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="brandBuyDao" type="TaoMeetting.Persistence.BrandBuyDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <object id="priceRangeDao" type="TaoMeetting.Persistence.PriceRangeDao,Persistence">
+    <property name="HibernateTemplate" ref="HibernateTemplate" />
+  </object>
+  <!--<object id="NHibernateSessionFactory" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate21">
+        <property name="DbProvider" ref="DbProvider"/>
+        <property name="MappingAssemblies">
+            <list>                
+                <value>Domain</value>
+            </list>
+        </property>
+        <property name="HibernateProperties">
+            <dictionary>
+                <entry key="hibernate.connection.provider"
+                       value="NHibernate.Connection.DriverConnectionProvider"/>
+                <entry key="dialect"
+                       value="NHibernate.Dialect.MsSql2000Dialect"/>
+                <entry key="hibernate.connection.driver_class"
+                       value="NHibernate.Driver.SqlClientDriver"/>
+                <entry key="show_sql" value="false" />
+                <entry key="hibernate.current_session_context_class" value="Spring.Data.NHibernate.SpringSessionContext, Spring.Data.NHibernate21"/>
+                <entry key="hibernate.query.factory_class" value="NHibernate.Hql.Classic.ClassicQueryTranslatorFactory" />
+                <entry key="cache.provider_class" value="NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache" />
+                <entry key="relativeExpiration" value="5" />
+                --><!--2.显式启用二级缓存--><!--
+                <entry key="cache.use_second_level_cache" value="true"/>
+                --><!--4.启动查询缓存--><!--
+                <entry key="cache.use_query_cache" value="true"/>
+                <entry key='hibernate.search.default.directory_provider' value='NHibernate.Search.Store.FSDirectoryProvider,NHibernate.Search' />
+                <entry key='hibernate.search.default.indexBase' value='~/Seach/Tyre'/>
+                <entry key='hibernate.search.default.indexBase.create' value='true' />
+            </dictionary>
+        </property>
+        <property name="ExposeTransactionAwareSessionFactory" value="true" />
+        --><!--events--><!--
+        <property name="EventListeners">
+            <dictionary>
+                <entry key="PostInsert">
+                    <object type="NHibernate.Search.Event.FullTextIndexEventListener, NHibernate.Search" />
+                </entry>
+                <entry key="PostUpdate">
+                    <object type="NHibernate.Search.Event.FullTextIndexEventListener, NHibernate.Search" />
+                </entry>
+                <entry key="PostDelete">
+                    <object type="NHibernate.Search.Event.FullTextIndexEventListener, NHibernate.Search" />
+                </entry>
+            </dictionary>
+        </property>  
+    </object>--> 
+</objects>

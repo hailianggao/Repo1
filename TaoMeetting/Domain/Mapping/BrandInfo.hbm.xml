@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Domain" namespace="TaoMeetting.Domain">
+  <class name="BrandInfo" table="BrandInfo" lazy="true">
+    <id name="id" column="id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="string" length="100" name="BrandName" column="BrandName" not-null="true"/>
+    <property type="string" length="100" name="BrandPic" column="BrandPic" not-null="true"/>
+    <many-to-one class="Address" cascade="none" name="Address" column="Address" ></many-to-one>
+    <property type="string" length="100" name="Phone" column="Phone" not-null="true"/>
+    <property type="string" length="100" name="Url" column="Url" not-null="true"/>
+    <property type="float"  name="BaseFunScore" column="BaseFunScore" not-null="true"/>
+    <property type="float"  name="SpecialFunScore" column="SpecialFunScore" not-null="true"/>
+    <property type="float"  name="Weight" column="Weight" not-null="true"/>
+    <bag name="BrandFunctions" inverse="true" lazy="true" cascade="all-delete-orphan">
+      <key column="BfId" />
+      <one-to-many class="BrandFunction" />
+    </bag>
+    <bag name="BrandProducts" inverse="true" lazy="true" cascade="all-delete-orphan">
+      <key column="BpId" />
+      <one-to-many class="BrandProduct" />
+    </bag>
+    <bag name="BrandBuys" inverse="true" lazy="true" cascade="all-delete-orphan">
+      <key column="BbId" />
+      <one-to-many class="BrandBuy" />
+    </bag>
+  </class>
+</hibernate-mapping>

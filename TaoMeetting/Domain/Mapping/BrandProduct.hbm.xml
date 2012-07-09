@@ -1,0 +1,10 @@
+﻿<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Domain" namespace="TaoMeetting.Domain">
+  <class name="BrandProduct" table="BrandProduct" lazy="true">
+    <id name="id" column="id" type="int">
+      <generator class="native" />
+    </id>
+    <property type="int"  name="BpId" column="BpId" not-null="true"/>
+    <!--<property type="int"  name="ProductTypeId" column="ProductTypeId" not-null="true"/>-->
+    <many-to-one  name="ProductT" cascade="none" column="ProductTypeId" class="TaoMeetting.Domain.ProductType,TaoMeetting" />
+  </class>
+</hibernate-mapping> 
